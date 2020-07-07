@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/mainnewback"
+    tools:context=".MainActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:id="@+id/toolbar"
+        tools:targetApi="honeycomb">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ViewFlipper
+        android:layout_marginTop="50dp"
+        android:id="@+id/viewflip"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+    </ViewFlipper>
+
+
+
+
+
+    <Button
+        android:id="@+id/resturants"
+        android:drawableLeft="@drawable/resturants"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="    Available restaurants       "
+        android:background="@drawable/rounded_buttonyellow"/>
+    <Button
+        android:id="@+id/fastfood"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/availablerest"
+        android:layout_marginTop="7dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="    order from fast food stations       "
+        android:background="@drawable/rounded_buttonyellow"/>
+
+    <Button
+        android:id="@+id/settings"
+        android:drawableStart="@drawable/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="7dp"
+        android:padding="10dp"
+        android:background="@drawable/rounded_buttonyellow"
+        android:text="   settings  "
+        android:drawableLeft="@drawable/settings" />
+
+
+
+</LinearLayout>

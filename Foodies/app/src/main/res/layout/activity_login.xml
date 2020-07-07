@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+
+    <LinearLayout
+
+        android:padding="10dp"
+        android:background="@drawable/signin"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:ignore="MissingConstraints">
+
+
+
+
+
+        <EditText
+            android:textStyle="normal"
+            android:layout_marginTop="220dp"
+            android:padding="10dp"
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="enter your email"
+            android:inputType="textEmailAddress"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#000000" />
+
+
+
+        <EditText
+            android:textStyle="normal"
+            android:padding="10dp"
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="enter your password"
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#000000" />
+
+
+        <!-- Login Button -->
+
+        <Button
+            android:background="@drawable/rounded_buttonyellow"
+
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:text="CONNECT"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/btn_reset_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@null"
+            android:text="Trouble login in? Reset password here"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+        <!-- Link to Login Screen -->
+
+        <Button
+            android:textStyle="normal"
+            android:id="@+id/btn_signup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:textColor="#000000"
+            android:background="@null"
+            android:text="not a member yet! Register to foodies"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            tools:ignore="SpUsage" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center|bottom"
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="162dp"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>

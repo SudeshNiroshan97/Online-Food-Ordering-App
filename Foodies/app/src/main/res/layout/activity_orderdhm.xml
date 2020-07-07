@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/backfoods"
+    android:layout_height="match_parent"
+    tools:context=".orderdhm">
+
+
+
+
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Order from DHM Bakery"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item name"/>
+
+            <TextView
+                android:layout_marginLeft="50dp"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount"/>
+
+            <TextView
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="Quantity"
+                android:layout_marginStart="50dp"
+                android:hint="qty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/spinner1">
+
+        </Spinner>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_weight="3"
+                android:id="@+id/item1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="item1"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_weight="3"
+                android:id="@+id/price1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="0"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:layout_weight="3"
+                android:id="@+id/qty1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:hint="qty"
+                android:text="0" />
+
+        </LinearLayout>
+
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/spinner2">
+
+        </Spinner>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_weight="3"
+                android:id="@+id/item2"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="item2"/>
+
+            <TextView
+                android:layout_weight="3"
+                android:layout_marginLeft="50dp"
+                android:id="@+id/price2"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"/>
+
+            <EditText
+                android:layout_weight="3"
+                android:id="@+id/qty2"
+                android:text="0"
+                android:layout_marginLeft="10dp"
+                android:hint="qty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/spinner3">
+
+        </Spinner>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_weight="3"
+                android:id="@+id/item3"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="item3"/>
+
+            <TextView
+                android:layout_weight="3"
+                android:layout_marginLeft="50dp"
+                android:id="@+id/price3"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"/>
+
+            <EditText
+                android:layout_weight="3"
+                android:id="@+id/qty3"
+                android:text="0"
+                android:layout_marginLeft="10dp"
+                android:hint="qty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/gettotal"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="     get total    "
+                android:background="@drawable/rounded_buttonyellow"/>
+
+            <TextView
+                android:id="@+id/totaltext"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="35sp"
+                android:layout_gravity="center"
+                android:text="Total"/>
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="enter your details below"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="enter your name"
+                android:id="@+id/name"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="enter your mobile number"
+                android:id="@+id/mobilenum"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="enter your address"
+                android:id="@+id/address"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Special instructions"
+                android:id="@+id/instructions"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:id="@+id/email"/>
+
+
+
+            <Button
+                android:padding="10dp"
+                android:background="#FF9800"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   Pay online   "
+                android:id="@+id/onlinepay"/>
+            <Button
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:background="#FF9800"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   Cash on delivery  "
+                android:id="@+id/cashondelivery"/>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

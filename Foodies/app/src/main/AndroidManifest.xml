@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.foodies">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/mainicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/mainicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".orderdinu"></activity>
+        <activity android:name=".fooddinu" />
+        <activity android:name=".orderkalana" />
+        <activity android:name=".foodkalana" />
+        <activity android:name=".orderdhm" />
+        <activity android:name=".fooddhm" />
+        <activity android:name=".orderamalya" />
+        <activity android:name=".foodAmalya" />
+        <activity android:name=".AvailableResturants" />
+        <activity android:name=".burgerkingweb" />
+        <activity android:name=".kfcweb" />
+        <activity android:name=".Pizzahutweb" />
+        <activity android:name=".Fastfoodmain" />
+        <activity android:name=".Settings" />
+        <activity android:name=".ResetPasswordActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
